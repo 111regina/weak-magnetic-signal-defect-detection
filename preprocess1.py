@@ -79,8 +79,6 @@ def process_file(csv_path, xlsx_path, label_type, cycle_counter):
                 label_id = 1
             elif side == '左' and blade_no == 15:
                 label_id = 2
-            elif blade_no in [7, 10]:
-                label_id = 3
             else:
                 label_id = 0
 
@@ -128,7 +126,7 @@ def batch_process(csv_dir, xlsx_dir, label_type="无磁铁"):
 # 程序入口
 if __name__ == "__main__":
     batch_process(
-        csv_dir="data/有磁铁数据",
-        xlsx_dir="data/有磁铁数据/缺陷位置标注",
-        label_type="有磁铁"
+        csv_dir="data/无磁铁数据",
+        xlsx_dir="data/无磁铁数据/缺陷位置标注",
+        label_type="无磁铁"
     )
